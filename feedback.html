@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link href="style.css" rel="stylesheet"></link>
+    <link href="bootstrap-5.0.2-dist\css\bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="body">  
+  <div class="banner">
+    <div class="navbar">
+      <img class="logo" src="warnerBrosLogo3.png" alt="WarnerBrosLogo">
+      <h1><a href="index.html"></a>WarnerBros</h1>
+      <ul>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="tvshows.html">TV shows</a></li>
+        <li><a href="gamesandapps.html">Games</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </div>
+    <div class="Searchbar">
+      <form class="search-form" action="#">
+        <input type="text" placeholder="Search..." class="search-field">
+        <button type="submit" class="search-button">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Feedback Form</h1>
+    <form id="feedbackForm" action="#" method="POST">
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-group">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Enter your feedback"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit Feedback">
+        </div>
+    </form>
+  </div>
+  <script src="bootstrap-5.0.2-dist\js\bootstrap.min.js"></script> 
+</body>
+
+<footer class="footer">
+  <div class="social-icons">
+    <a href="https://www.facebook.com/WarnerBrosEntertainment" target="_blank">
+      <img src="facebookicon.png" alt="Facebook Icon" style="width: 30px; height: 30px;">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/warnerbrosentertainment/" target="_blank">
+      <img src="instagramicon.png" alt="Instagram Icon" style="width: 30px; height: 30px;">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/WarnerBrosEnt" target="_blank">
+      <img src="twittericon.png" alt="Twitter Icon" style="width: 30px; height: 30px;">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </div>
+</footer>
+</html>
