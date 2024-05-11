@@ -205,3 +205,42 @@ body {
     input[type="submit"]:hover {
         background-color: #00c4b9;
     }
+
+    @media screen and (min-width: 768px) {
+  /* Adjust styles for tablets and desktops */
+  .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .content-block {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .content-block img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Adjust styles for smaller screens */
+  .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .content-block {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .content-block img {
+    width: 100%;
+  }
+}
