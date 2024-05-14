@@ -225,22 +225,38 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
-  /* Adjust styles for smaller screens */
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .navbar h1 {
+    margin-bottom: 20px; /* Increase spacing below logo/title */
+  }
+
+  .banner {
+    padding: 20px; /* Add padding to the banner */
+  }
+
   .container1 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+    flex-direction: column; /* Stack iframes vertically */
+    align-items: center; /* Center iframes horizontally */
   }
 
-  .content-block {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 20px;
+  .container1 div {
+    width: 100%; /* Set iframes to full width */
+    margin-bottom: 20px; /* Add space between iframes */
   }
 
-  .content-block img {
-    width: 100%;
+  .footer {
+    text-align: center; /* Center social icons in the footer */
+  }
+
+  .social-icons a {
+    margin-right: 10px; /* Add space between social icons */
   }
 }
