@@ -3,7 +3,7 @@
     font-family: sans-serif;
 }
 body {
-  background-image: url("longBackground.jpg");
+  background-image: url("galaxyBackground.jpg");
   background-size: auto; /* Adjust to cover the entire background */
   background-position: center; /* Center the background image */
   position: absolute;
