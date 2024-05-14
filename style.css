@@ -6,7 +6,7 @@ body {
   background-image: url("galaxyBackground.jpg");
   background-size: auto; /* Adjust to cover the entire background */
   background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the background from repeating */
+   /* Prevent the background from repeating */
   position: absolute;
 }
 
