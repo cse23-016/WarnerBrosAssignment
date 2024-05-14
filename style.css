@@ -226,8 +226,8 @@ body {
 }
 
 /* Media Query for Responsive Design */
-@media only screen and (max-width: 768px) {
-  /* Adjustments for smaller screens */
+@media only screen and (max-width: 992px) {
+  /* Adjustments for tablets and smaller screens */
   .navbar {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
@@ -243,13 +243,15 @@ body {
 
   .container1 {
     display: flex;
-    flex-direction: column; /* Stack iframes vertically */
-    align-items: center; /* Center iframes horizontally */
+    flex-direction: row; /* Display iframes side by side */
+    justify-content: center; /* Center iframes horizontally */
+    align-items: center; /* Center iframes vertically */
+    flex-wrap: wrap; /* Wrap iframes to next line if needed */
   }
 
   .container1 div {
-    width: 100%; /* Set iframes to full width */
-    margin-bottom: 20px; /* Add space between iframes */
+    width: calc(50% - 20px); /* Set iframes to 50% width with spacing */
+    margin: 10px; /* Add spacing around iframes */
   }
 
   .footer {
@@ -260,3 +262,13 @@ body {
     margin-right: 10px; /* Add space between social icons */
   }
 }
+
+/* Media Query for Small Devices (Phones) */
+@media only screen and (max-width: 576px) {
+  /* Adjustments for phones */
+  .container1 div {
+    width: 100%; /* Set iframes to full width */
+    margin: 10px 0; /* Add vertical spacing between iframes */
+  }
+}
+
